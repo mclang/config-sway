@@ -1,0 +1,22 @@
+#
+# Configuration for Swaylock Effects:
+# https://github.com/mortie/swaylock-effects
+#
+color=000000
+clock
+# datestr='%F'
+# timestr='%T'
+fade-in=0.5
+daemonize
+ignore-empty-password
+indicator-radius=100
+indicator-thickness=20
+show-failed-attempts
+show-keyboard-layout
+# effect-blur <radius>x<times>   Blur images.
+effect-pixelate=10
+# effect-greyscale               Make images greyscale.
+# effect-vignette=0.2:0.8
+image=~/.config/sway/swaylock/vault_2048x2048.jpg
+scaling=center
+
