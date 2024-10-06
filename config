@@ -428,8 +428,7 @@ bindsym $mod+Shift+Escape exec --no-startup-id /usr/bin/dunstctl history-pop
 # - Furthermore simple `assign` with `class` selector seems flaky, at least with Firefox...
 # - Using `for_window` without additional selector like `title` or `instance` moves ALL matching windows when they get FOCUSED.
 
-# Direct assign catches ALL
-# assign [app_id="firefox"] $ws2
+# Direct assign catches ALL: assign [app_id="firefox"] $ws2
 for_window [app_id="firefox" title="About Mozilla Firefox"] floating enable
 for_window [app_id="firefox" title="Choose User Profile"]   floating enable
 for_window [app_id="firefox" title="^Page Info"]            floating enable
@@ -462,6 +461,7 @@ for_window [app_id="pavucontrol"]           floating enable
 for_window [app_id="wev"]                   floating enable, resize set width 20ppt height 20ppt
 for_window [app_id="yad"]                   floating enable, resize set width 640 height 700
 #for_window [class="Xsane" instance="xsane"] floating enable SEEMS TO HIDE MAIN WINDOW AFTER SCANNING!
+for_window [app_id="system-config-printer"] floating enable
 #for_window [class="(?i)zoom"]               floating enable             # Catches ALL Zoom windows
 for_window [app_id="thunar"                 title="^File Operation Progress"]   floating enable
 for_window [app_id="xdg-desktop-portal-gtk" title="^Open Folder$"]              floating enable
